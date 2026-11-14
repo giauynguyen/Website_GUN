@@ -1,0 +1,11 @@
+{
+  "note": "Mẫu cấu trúc dữ liệu sản phẩm. Khi bổ sung sản phẩm mới, thêm đối tượng tương tự vào mảng PRODUCTS_DATA trong js/app.js",
+  "sample_item": {
+    "id": "prod-7",
+    "cat": "network",
+    "catLabel": { "vi": "Hạ tầng mạng & Bảo mật", "en": "Network & Security" },
+    "name": { "vi": "Tên sản phẩm tiếng Việt", "en": "Product Name in English" },
+    "desc": { "vi": "Mô tả ngắn gọn giải pháp/thiết bị", "en": "Short description" },
+    "specs": ["Thông số 1", "Thông số 2", "Thông số 3"]
+  }
+}

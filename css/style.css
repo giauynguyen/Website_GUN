@@ -1,0 +1,10 @@
+body { font-family: 'Be Vietnam Pro', system-ui, sans-serif; color: #0B1F4D; }
+    .v2b-gradient { background: linear-gradient(135deg, #FF7A1A 0%, #FFB020 100%); }
+    .navy-gradient { background: linear-gradient(135deg, #0B1F4D 0%, #16347A 100%); }
+    .nav-link-active { color: #FF7A1A; font-weight: 700; position: relative; }
+    .nav-link-active::after {
+      content: ''; position: absolute; left: 0; right: 0; bottom: -4px; height: 2px;
+      background: #FF7A1A; border-radius: 2px;
+    }
+    .card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .card-hover:hover { transform: translateY(-3px); box-shadow: 0 12px 28px -8px rgba(11, 31, 77, 0.14); }

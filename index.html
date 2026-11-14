@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Công ty TNHH Gia Uy Nguyễn | giauynguyen.vn</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Be Vietnam Pro"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              orange: '#FF7A1A',
+              amber: '#FFB020',
+              navy: '#0B1F4D',
+              blue: '#2563EB',
+              cream: '#FFE2BA',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-slate-50 antialiased min-h-screen flex flex-col">
+
+  <!-- Top Utility Bar -->
+  <div class="bg-brand-navy text-white text-xs py-2 px-4 hidden sm:block">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-4">
+        <span>MST: 0106055545</span>
+        <span>|</span>
+        <span>024.3993 2122</span>
+        <span>|</span>
+        <span>giauynguyen@gmail.com</span>
+      </div>
+      <div class="font-semibold tracking-wider text-brand-cream" data-i18n="slogan">
+        UY TÍN · AN TÂM · KỊP THỜI · HIỆU QUẢ
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Logo -->
+        <button type="button" onclick="navigateTo('home')" class="flex items-center gap-3 focus:outline-none text-left">
+          <img src="assets/images/logo_v2b_light.png" alt="Logo Công ty TNHH Gia Uy Nguyễn" class="h-10 md:h-12 w-auto max-w-full object-contain" />
+        </button>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-brand-navy">
+          <button type="button" onclick="navigateTo('home')" data-nav="home" class="nav-btn hover:text-brand-orange transition" data-i18n="nav_home">Trang chủ</button>
+          <button type="button" onclick="navigateTo('about')" data-nav="about" class="nav-btn hover:text-brand-orange transition" data-i18n="nav_about">Giới thiệu</button>
+          <button type="button" onclick="navigateTo('services')" data-nav="services" class="nav-btn hover:text-brand-orange transition" data-i18n="nav_services">Dịch vụ</button>
+          <button type="button" onclick="navigateTo('products')" data-nav="products" class="nav-btn hover:text-brand-orange transition" data-i18n="nav_products">Sản phẩm</button>
+          <button type="button" onclick="navigateTo('finance')" data-nav="finance" class="nav-btn hover:text-brand-orange transition" data-i18n="nav_finance">Chia sẻ kiến thức</button>
+          <button type="button" onclick="navigateTo('news')" data-nav="news" class="nav-btn hover:text-brand-orange transition" data-i18n="nav_news">Tin tức</button>
+          <button type="button" onclick="navigateTo('contact')" data-nav="contact" class="nav-btn hover:text-brand-orange transition" data-i18n="nav_contact">Liên hệ</button>
+        </nav>
+
+        <!-- Language Switcher + Mobile Menu Button -->
+        <div class="flex items-center gap-3">
+          <div class="inline-flex rounded-lg border border-slate-200 bg-slate-100 p-0.5 text-xs font-bold">
+            <button type="button" id="btn-lang-vi" onclick="setLang('vi')" class="px-2.5 py-1.5 rounded-md transition bg-brand-orange text-white">VI</button>
+            <button type="button" id="btn-lang-en" onclick="setLang('en')" class="px-2.5 py-1.5 rounded-md transition text-brand-navy hover:text-brand-orange">EN</button>
+          </div>
+          <button type="button" onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg border border-slate-200 text-brand-navy hover:bg-slate-100" aria-label="Menu">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200 px-4 py-3 space-y-1 text-sm font-medium">
+      <button type="button" onclick="navigateTo('home'); toggleMobileMenu()" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-orange-50 hover:text-brand-orange" data-i18n="nav_home">Trang chủ</button>
+      <button type="button" onclick="navigateTo('about'); toggleMobileMenu()" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-orange-50 hover:text-brand-orange" data-i18n="nav_about">Giới thiệu</button>
+      <button type="button" onclick="navigateTo('services'); toggleMobileMenu()" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-orange-50 hover:text-brand-orange" data-i18n="nav_services">Dịch vụ</button>
+      <button type="button" onclick="navigateTo('products'); toggleMobileMenu()" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-orange-50 hover:text-brand-orange" data-i18n="nav_products">Sản phẩm</button>
+      <button type="button" onclick="navigateTo('finance'); toggleMobileMenu()" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-orange-50 hover:text-brand-orange" data-i18n="nav_finance">Chia sẻ kiến thức</button>
+      <button type="button" onclick="navigateTo('news'); toggleMobileMenu()" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-orange-50 hover:text-brand-orange" data-i18n="nav_news">Tin tức</button>
+      <button type="button" onclick="navigateTo('contact'); toggleMobileMenu()" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-orange-50 hover:text-brand-orange" data-i18n="nav_contact">Liên hệ</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="app-main" class="flex-1"></main>
+
+  <!-- Footer -->
+  <footer class="bg-brand-navy text-slate-300 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <img src="assets/images/logo_v2b_dark.png" alt="Gia Uy Nguyen Logo Dark" class="h-12 w-auto max-w-full object-contain mb-4" />
+          <p class="text-sm text-slate-300 leading-relaxed mb-3" data-i18n="footer_desc">
+            Đồng hành cùng cơ quan, doanh nghiệp trong toàn bộ vòng đời dự án CNTT, chuyển đổi số, hạ tầng viễn thông và cung cấp giải pháp công nghệ hiệu quả.
+          </p>
+          <p class="text-xs font-bold tracking-wider text-brand-amber" data-i18n="slogan">UY TÍN · AN TÂM · KỊP THỜI · HIỆU QUẢ</p>
+        </div>
+
+        <div>
+          <h3 class="text-white font-bold text-sm uppercase tracking-wider mb-4" data-i18n="footer_links_title">Liên kết nhanh</h3>
+          <ul class="space-y-2 text-sm">
+            <li><button type="button" onclick="navigateTo('about')" class="hover:text-brand-orange transition" data-i18n="nav_about">Giới thiệu</button></li>
+            <li><button type="button" onclick="navigateTo('services')" class="hover:text-brand-orange transition" data-i18n="nav_services">Dịch vụ tư vấn</button></li>
+            <li><button type="button" onclick="navigateTo('products')" class="hover:text-brand-orange transition" data-i18n="nav_products">Sản phẩm & Giải pháp</button></li>
+            <li><button type="button" onclick="navigateTo('finance')" class="hover:text-brand-orange transition" data-i18n="nav_finance">Chia sẻ kiến thức</button></li>
+            <li><button type="button" onclick="navigateTo('news')" class="hover:text-brand-orange transition" data-i18n="nav_news">Tin tức cập nhật</button></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white font-bold text-sm uppercase tracking-wider mb-4" data-i18n="footer_contact_title">Thông tin liên hệ</h3>
+          <ul class="space-y-2.5 text-sm">
+            <li><strong class="text-white" data-i18n="company_name_full">CÔNG TY TNHH GIA UY NGUYỄN</strong></li>
+            <li data-i18n="address_full">Số 39, Tổ 19, Cụm 3, Phường Hồng Hà, Thành phố Hà Nội</li>
+            <li><span data-i18n="tax_label">MST</span>: 0106055545</li>
+            <li><span data-i18n="phone_label">Điện thoại</span>: <a href="tel:02439932122" class="text-brand-amber hover:underline">024.3993 2122</a></li>
+            <li>Email: <a href="mailto:giauynguyen@gmail.com" class="text-brand-amber hover:underline">giauynguyen@gmail.com</a></li>
+            <li>Website: <span class="text-white font-medium">giauynguyen.vn</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-2">
+        <span>© 2026 GIA UY NGUYEN COMPANY LIMITED. All rights reserved.</span>
+        <span>ISO 9001:2015 Quality Management</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quote Request Modal -->
+  <div id="quote-modal" class="hidden fixed inset-0 z-50 bg-brand-navy/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-slate-200">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-lg font-bold text-brand-navy" data-i18n="modal_quote_title">Yêu cầu báo giá sản phẩm / giải pháp</h3>
+        <button type="button" onclick="closeQuoteModal()" class="p-1.5 rounded-lg text-slate-400 hover:text-brand-navy hover:bg-slate-100">✕</button>
+      </div>
+      <form onsubmit="submitQuoteForm(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1" data-i18n="modal_product_label">Sản phẩm / Giải pháp quan tâm</label>
+          <input id="quote-product-input" type="text" readonly class="w-full px-3.5 py-2.5 rounded-xl bg-orange-50 border border-orange-200 text-brand-navy font-semibold text-sm" />
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1" data-i18n="form_name">Họ và tên / Đơn vị *</label>
+            <input id="quote-name" required type="text" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-orange focus:outline-none" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1" data-i18n="form_phone">Số điện thoại *</label>
+            <input id="quote-phone" required type="tel" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-orange focus:outline-none" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1">Email *</label>
+          <input id="quote-email" required type="email" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-orange focus:outline-none" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1" data-i18n="form_note">Yêu cầu chi tiết / Số lượng dự kiến</label>
+          <textarea id="quote-note" rows="3" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-orange focus:outline-none"></textarea>
+        </div>
+        <div class="flex justify-end gap-2 pt-2">
+          <button type="button" onclick="closeQuoteModal()" class="px-4 py-2 rounded-xl border border-slate-300 text-sm font-semibold text-slate-600 hover:bg-slate-100" data-i18n="btn_cancel">Hủy</button>
+          <button type="submit" class="px-5 py-2 rounded-xl v2b-gradient text-white text-sm font-bold shadow hover:opacity-95" data-i18n="btn_send_quote">Gửi yêu cầu báo giá</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Article Reader Modal -->
+  <div id="article-modal" class="hidden fixed inset-0 z-50 bg-brand-navy/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 sm:p-8 shadow-2xl border border-slate-200">
+      <div class="flex items-start justify-between gap-4 mb-4">
+        <div>
+          <span id="article-modal-tag" class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-orange-100 text-brand-orange mb-2"></span>
+          <h3 id="article-modal-title" class="text-xl font-extrabold text-brand-navy leading-snug"></h3>
+          <p id="article-modal-date" class="text-xs text-slate-500 mt-1"></p>
+        </div>
+        <button type="button" onclick="closeArticleModal()" class="p-1.5 rounded-lg text-slate-400 hover:text-brand-navy hover:bg-slate-100">✕</button>
+      </div>
+      <div id="article-modal-body" class="text-sm text-slate-700 leading-relaxed space-y-3"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="hidden fixed bottom-5 right-5 z-50 bg-brand-navy text-white px-5 py-3.5 rounded-xl shadow-xl border-l-4 border-brand-orange text-sm font-medium max-w-sm"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
