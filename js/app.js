@@ -19,7 +19,7 @@ let currentLang = 'vi';
         address_full: 'Số 39, Tổ 19, Cụm 3, Phường Hồng Hà, Thành phố Hà Nội',
         tax_label: 'MST',
         phone_label: 'Điện thoại',
-        footer_desc: 'Đồng hành cùng Quý cơ quan, doanh nghiệp trong toàn bộ vòng đời dự án CNTT, chuyển đổi số, hạ tầng viễn thông và cung cấp giải pháp công nghệ hiệu quả.',
+        footer_desc: 'Đồng hành cùng Quý cơ quan, doanh nghiệp trong toàn bộ vòng đời dự án đầu tư CNTT, chuyển đổi số, hạ tầng viễn thông và cung cấp giải pháp công nghệ hiệu quả.',
         footer_links_title: 'Liên kết nhanh',
         footer_contact_title: 'Thông tin liên hệ',
         modal_quote_title: 'Yêu cầu báo giá sản phẩm / giải pháp',
@@ -35,11 +35,11 @@ let currentLang = 'vi';
         hero_cta_services: 'Khám phá dịch vụ',
         hero_cta_products: 'Xem sản phẩm & giải pháp',
         stat_year: 'Năm thành lập',
-        stat_projects: 'Cổng thông tin song ngữ',
         stat_iso: 'Hệ thống quản lý chất lượng',
-        stat_capital: 'Tuân thủ quy định pháp luật',
+        stat_projects: 'Cổng thông tin song ngữ',
+        stat_capital: 'Tuân thủ pháp lý',
         pillars_title: 'Lĩnh vực hoạt động & Chuyên môn cốt lõi',
-        pillars_sub: 'Kết hợp năng lực tư vấn đầu tư công nghệ với giải pháp phần mềm, hạ tầng và tri thức cộng đồng.',
+        pillars_sub: 'Kết hợp năng lực tư vấn đầu tư công nghệ với tối ưu hóa quy trình nghiệp vụ, hạ tầng kỹ thuật và xu thế phát triển.',
         about_title: 'Về Công ty TNHH Gia Uy Nguyễn',
         about_letter_title: 'Thư ngỏ từ Giám đốc',
         about_letter_p1: 'Thành lập năm 2012, Gia Uy Nguyễn tập trung vào dịch vụ tư vấn đầu tư ứng dụng công nghệ thông tin, chuyển đổi số, hạ tầng viễn thông và phát thanh, truyền hình. Chúng tôi đồng hành cùng chủ đầu tư trong toàn bộ vòng đời dự án: khảo sát, lập dự án, thiết kế và dự toán, thẩm tra, lựa chọn nhà thầu, giám sát.',
@@ -48,7 +48,7 @@ let currentLang = 'vi';
         core_values_title: '4 Giá trị cốt lõi',
         legal_title: 'Thông tin pháp lý doanh nghiệp',
         services_title: 'Dịch vụ Tư vấn Đầu tư & Chuyển đổi số',
-        services_sub: 'Tư vấn độc lập, khách quan, tuân thủ đầy đủ quy định pháp luật về đấu thầu và đầu tư công.',
+        services_sub: 'Tư vấn độc lập, khách quan, lấy hiệu quả đầu tư của khách hàng và tính tuân thủ làm tôn chỉ hoạt động.',
         lifecycle_title: 'Dịch vụ tư vấn theo vòng đời dự án',
         products_title: 'Sản phẩm hàng hóa & Giải pháp CNTT',
         products_sub: 'Phân nhóm theo giải pháp và thiết bị chuyên dụng. Quý khách vui lòng chọn sản phẩm và gửi yêu cầu để nhận báo giá chi tiết theo cấu hình thực tế.',
@@ -56,9 +56,9 @@ let currentLang = 'vi';
         btn_request_quote: 'Liên hệ báo giá',
         search_placeholder: 'Tìm kiếm giải pháp, thiết bị...',
         finance_title: 'Tri thức cộng đồng',
-        finance_sub: 'Chuyên trang chia sẻ tri thức, góc nhìn phân tích vĩ mô, quản trị vốn và tài chính số (không cung cấp dịch vụ môi giới hay tư vấn tài chính thương mại).',
+        finance_sub: 'Chuyên trang chia sẻ tri thức, góc nhìn phân tích vĩ mô, quản lý gia sản và tài chính (không cung cấp dịch vụ môi giới hay tư vấn đầu tư tài chính).',
         news_title: 'Tin tức & Cập nhật',
-        news_sub: 'Cập nhật các điểm mới về chính sách chuyển đổi số, đầu tư công, đấu thầu và xu hướng công nghệ thông tin.',
+        news_sub: 'Cập nhật các điểm mới kinh tế vỹ mô, về chính sách chuyển đổi số, đầu tư công, đấu thầu và xu hướng công nghệ thông tin.',
         contact_title: 'Liên hệ hợp tác & Tư vấn',
         contact_sub: 'Kết nối trực tiếp với đội ngũ chuyên gia của Công ty TNHH Gia Uy Nguyễn tại Hà Nội.',
         btn_read_more: 'Đọc chi tiết',
@@ -136,14 +136,14 @@ let currentLang = 'vi';
       {
         title: { vi: 'UY TÍN', en: 'PRESTIGE' },
         desc: {
-          vi: 'Hoạt động liên tục từ năm 2012. Tư vấn độc lập, khách quan, trung thực và chuyên nghiệp, là người đồng hành tin cậy .',
+          vi: 'Hoạt động liên tục từ năm 2012. Tư vấn độc lập, khách quan, trung thực và chuyên nghiệp, là người đồng hành tin cậy.',
           en: 'Operating continuously since 2012. Independent, objective, transparent, and professional consulting.'
         }
       },
       {
         title: { vi: 'AN TÂM', en: 'PEACE OF MIND' },
         desc: {
-          vi: 'Hồ sơ tuân thủ đầy đủ quy định về đầu tư, đấu thầu, CNTT và chuyển đổi số; đồng hành giải trình khi thẩm định, thanh tra.',
+          vi: 'Hồ sơ chặt chẽ, tuân thủ đầy đủ quy định về đầu tư, chuyển đổi số, lựa chọn nhà thầu; đồng hành cùng chủ đầu tư giải trình khi thẩm định, kiểm toán, thanh tra.',
           en: 'Full compliance with investment, bidding, and digital transformation laws; dedicated support during audits and appraisals.'
         }
       },
@@ -157,7 +157,7 @@ let currentLang = 'vi';
       {
         title: { vi: 'HIỆU QUẢ', en: 'EFFECTIVENESS' },
         desc: {
-          vi: 'Giải pháp phù hợp nhu cầu thực tế và xu thế công nghệ; kiểm soát dự toán chi phí hợp lý, tiết kiệm vốn.',
+          vi: 'Giải pháp phù hợp nhu cầu thực tế và xu thế công nghệ; kiểm soát dự toán chi phí hợp lý, nâng cao hiểu quả sử dụng vốn đầu tư.',
           en: 'Practical technology fit, reasonable control of cost estimates, ensuring optimal investment efficiency.'
         }
       }
@@ -167,22 +167,22 @@ let currentLang = 'vi';
       {
         stage: { vi: 'Chuẩn bị đầu tư', en: 'Investment Preparation' },
         items: {
-          vi: ['Khảo sát hiện trạng, xác định nhu cầu đầu tư', 'Lập Báo cáo nghiên cứu khả thi, Báo cáo kinh tế – kỹ thuật', 'Lập Thiết kế và dự toán chi tiết', 'Thẩm tra dự án, BCKTKT, Đề cương và dự toán chi tiết'],
+          vi: ['Khảo sát hiện trạng, xác định nhu cầu đầu tư', 'Lập Báo cáo nghiên cứu khả thi, Báo cáo kinh tế – kỹ thuật', 'Thẩm tra dự án, BCKTKT, Đề cương và dự toán chi tiết'],
           en: ['Site & current-state survey, investment needs assessment', 'Feasibility Study & Techno-Economic Report formulation', 'Detailed Outline & Cost Estimation', 'Independent verification of projects & cost estimates']
         }
       },
       {
         stage: { vi: 'Thực hiện đầu tư', en: 'Investment Execution' },
         items: {
-          vi: ['Lập thiết kế thi công / thiết kế chi tiết và dự toán', 'Thẩm tra thiết kế chi tiết và dự toán', 'Lập E-HSMT, đánh giá E-HSDT; thẩm định HSMT & KQLCNT', 'Giám sát thi công, lắp đặt thiết bị, triển khai phần mềm'],
+          vi: ['Lập thiết kế thi công / thiết kế chi tiết và dự toán', 'Thẩm tra thiết kế chi tiết và dự toán', 'Lập E-HSMT, đánh giá E-HSDT; thẩm định HSMT & thẩm định KQLCNT', 'Giám sát thi công, lắp đặt thiết bị, triển khai phần mềm'],
           en: ['Detailed engineering design & bill of quantities', 'Verification of detailed design & budgets', 'E-HSMT preparation, E-HSDT evaluation & procurement appraisal', 'Construction, hardware installation & software deployment supervision']
         }
       },
       {
         stage: { vi: 'Kết thúc & Vận hành', en: 'Handover & Operation' },
         items: {
-          vi: ['Hỗ trợ nghiệm thu, bàn giao, quyết toán dự án', 'Tư vấn quản lý dự án và chuyển giao công nghệ', 'Tích hợp, bảo trì hệ thống CNTT – viễn thông theo nhu cầu'],
-          en: ['Acceptance testing, handover & final settlement support', 'Project management & technology transfer consulting', 'IT & telecom system integration and maintenance']
+          vi: ['Hỗ trợ nghiệm thu, bàn giao, thanh quyết toán dự án', 'Tư vấn quản lý dự án và chuyển giao công nghệ', 'Tích hợp, bảo trì hệ thống hạ tầng CNTT theo nhu cầu'],
+          en: ['Acceptance testing, handover & final settlement support', 'Project management & technology transfer consulting', 'IT system integration and maintenance']
         }
       }
     ];
