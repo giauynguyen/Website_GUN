@@ -19,7 +19,7 @@ let currentLang = 'vi';
         address_full: 'Số 39, Tổ 19, Cụm 3, Phường Hồng Hà, Thành phố Hà Nội',
         tax_label: 'MST',
         phone_label: 'Điện thoại',
-        footer_desc: 'Đồng hành cùng cơ quan, doanh nghiệp trong toàn bộ vòng đời dự án CNTT, chuyển đổi số, hạ tầng viễn thông và cung cấp giải pháp công nghệ hiệu quả.',
+        footer_desc: 'Đồng hành cùng Quý cơ quan, doanh nghiệp trong toàn bộ vòng đời dự án CNTT, chuyển đổi số, hạ tầng viễn thông và cung cấp giải pháp công nghệ hiệu quả.',
         footer_links_title: 'Liên kết nhanh',
         footer_contact_title: 'Thông tin liên hệ',
         modal_quote_title: 'Yêu cầu báo giá sản phẩm / giải pháp',
@@ -31,7 +31,7 @@ let currentLang = 'vi';
         btn_send_quote: 'Gửi yêu cầu báo giá',
         hero_badge: 'Thành lập từ 2012 · Chuẩn quản lý chất lượng ISO 9001:2015',
         hero_title: 'Tư vấn Chuyển đổi số & Giải pháp Hạ tầng CNTT Toàn diện',
-        hero_sub: 'Công ty TNHH Gia Uy Nguyễn đồng hành cùng Quý khách hàng từ khảo sát, lập dự án, thiết kế – dự toán, đấu thầu, giám sát đến tích hợp hệ thống.',
+        hero_sub: 'Công ty TNHH Gia Uy Nguyễn đồng hành cùng Quý khách hàng từ khảo sát, lập dự án, thiết kế – dự toán, đấu thầu, giám sát đến bảo trì hệ thống.',
         hero_cta_services: 'Khám phá dịch vụ',
         hero_cta_products: 'Xem sản phẩm & giải pháp',
         stat_year: 'Năm thành lập',
@@ -39,12 +39,12 @@ let currentLang = 'vi';
         stat_iso: 'Hệ thống quản lý chất lượng',
         stat_capital: 'Tuân thủ quy định pháp luật',
         pillars_title: 'Lĩnh vực hoạt động & Chuyên môn cốt lõi',
-        pillars_sub: 'Kết hợp năng lực tư vấn đầu tư công nghệ chuẩn xác với giải pháp phần mềm, hạ tầng và tri thức tài chính.',
+        pillars_sub: 'Kết hợp năng lực tư vấn đầu tư công nghệ với giải pháp phần mềm, hạ tầng và tri thức cộng đồng.',
         about_title: 'Về Công ty TNHH Gia Uy Nguyễn',
         about_letter_title: 'Thư ngỏ từ Giám đốc',
         about_letter_p1: 'Thành lập năm 2012, Gia Uy Nguyễn tập trung vào dịch vụ tư vấn đầu tư ứng dụng công nghệ thông tin, chuyển đổi số, hạ tầng viễn thông và phát thanh, truyền hình. Chúng tôi đồng hành cùng chủ đầu tư trong toàn bộ vòng đời dự án: khảo sát, lập dự án, thiết kế và dự toán, thẩm tra, lựa chọn nhà thầu, giám sát.',
         about_letter_p2: 'Với phương châm UY TÍN – AN TÂM – KỊP THỜI – HIỆU QUẢ, chúng tôi cam kết hồ sơ đúng quy định, bảo đảm tiến độ, giải pháp phù hợp thực tế, giúp Quý Khách hàng an tâm triển khai và sử dụng hiệu quả nguồn vốn đầu tư.',
-        about_director: 'TM. CÔNG TY TNHH GIA UY NGUYỄN',
+        about_director: 'GIÁM ĐỐC CÔNG TY',
         core_values_title: '4 Giá trị cốt lõi',
         legal_title: 'Thông tin pháp lý doanh nghiệp',
         services_title: 'Dịch vụ Tư vấn Đầu tư & Chuyển đổi số',
@@ -55,8 +55,8 @@ let currentLang = 'vi';
         products_note: 'Danh mục sản phẩm được thiết kế dạng mô-đun, dễ dàng cập nhật và bổ sung mã hàng mới sau khi đưa website vào vận hành.',
         btn_request_quote: 'Liên hệ báo giá',
         search_placeholder: 'Tìm kiếm giải pháp, thiết bị...',
-        finance_title: 'Chia sẻ kiến thức',
-        finance_sub: 'Chuyên trang chia sẻ kiến thức, góc nhìn phân tích vĩ mô, quản trị vốn và tài chính số (không cung cấp dịch vụ môi giới hay tư vấn tài chính thương mại).',
+        finance_title: 'Tri thức cộng đồng',
+        finance_sub: 'Chuyên trang chia sẻ tri thức, góc nhìn phân tích vĩ mô, quản trị vốn và tài chính số (không cung cấp dịch vụ môi giới hay tư vấn tài chính thương mại).',
         news_title: 'Tin tức & Cập nhật',
         news_sub: 'Cập nhật các điểm mới về chính sách chuyển đổi số, đầu tư công, đấu thầu và xu hướng công nghệ thông tin.',
         contact_title: 'Liên hệ hợp tác & Tư vấn',
@@ -136,7 +136,7 @@ let currentLang = 'vi';
       {
         title: { vi: 'UY TÍN', en: 'PRESTIGE' },
         desc: {
-          vi: 'Hoạt động liên tục từ năm 2012. Tư vấn độc lập, khách quan, trung thực và chuyên nghiệp.',
+          vi: 'Hoạt động liên tục từ năm 2012. Tư vấn độc lập, khách quan, trung thực và chuyên nghiệp, là người đồng hành tin cậy .',
           en: 'Operating continuously since 2012. Independent, objective, transparent, and professional consulting.'
         }
       },
@@ -157,8 +157,8 @@ let currentLang = 'vi';
       {
         title: { vi: 'HIỆU QUẢ', en: 'EFFECTIVENESS' },
         desc: {
-          vi: 'Giải pháp phù hợp nhu cầu thực tế và xu thế công nghệ; dự toán đúng định mức, sát giá thị trường, tiết kiệm vốn.',
-          en: 'Practical technology fit, accurate cost norms aligned with market rates, ensuring optimal investment efficiency.'
+          vi: 'Giải pháp phù hợp nhu cầu thực tế và xu thế công nghệ; kiểm soát dự toán chi phí hợp lý, tiết kiệm vốn.',
+          en: 'Practical technology fit, reasonable control of cost estimates, ensuring optimal investment efficiency.'
         }
       }
     ];
@@ -167,8 +167,8 @@ let currentLang = 'vi';
       {
         stage: { vi: 'Chuẩn bị đầu tư', en: 'Investment Preparation' },
         items: {
-          vi: ['Khảo sát hiện trạng, xác định nhu cầu đầu tư', 'Lập Báo cáo nghiên cứu khả thi, Báo cáo kinh tế – kỹ thuật', 'Lập Đề cương và dự toán chi tiết (chi thường xuyên)', 'Thẩm tra dự án, BCKTKT, đề cương và dự toán'],
-          en: ['Site & current-state survey, investment needs assessment', 'Feasibility Study & Techno-Economic Report formulation', 'Detailed Outline & Cost Estimation (recurrent budget)', 'Independent verification of projects & cost estimates']
+          vi: ['Khảo sát hiện trạng, xác định nhu cầu đầu tư', 'Lập Báo cáo nghiên cứu khả thi, Báo cáo kinh tế – kỹ thuật', 'Lập Thiết kế và dự toán chi tiết', 'Thẩm tra dự án, BCKTKT, Đề cương và dự toán chi tiết'],
+          en: ['Site & current-state survey, investment needs assessment', 'Feasibility Study & Techno-Economic Report formulation', 'Detailed Outline & Cost Estimation', 'Independent verification of projects & cost estimates']
         }
       },
       {
@@ -257,7 +257,7 @@ let currentLang = 'vi';
       {
         id: 'prod-7',
         cat: 'office_it',
-        catLabel: { vi: 'Máy tính, Laptop, Máy in & Scan', en: 'PCs, Laptops, Printers & Scanners' },
+        catLabel: { vi: 'Máy tính, Thiết bị văn phòng', en: 'PCs, Laptops, Office equipments' },
         name: { vi: 'Máy tính để bàn (Desktop PC), Máy trạm & Laptop Doanh nghiệp', en: 'Business Desktops, Workstations & Enterprise Laptops' },
         desc: {
           vi: 'Cung cấp đồng bộ máy tính văn phòng, máy trạm đồ họa – kỹ thuật và laptop doanh nghiệp cấu hình ổn định, bảo hành chính hãng.',
@@ -268,7 +268,7 @@ let currentLang = 'vi';
       {
         id: 'prod-8',
         cat: 'office_it',
-        catLabel: { vi: 'Máy tính, Laptop, Máy in & Scan', en: 'PCs, Laptops, Printers & Scanners' },
+        catLabel: { vi: 'Máy tính, Thiết bị văn phòng', en: 'PCs, Laptops, Office equipments' },
         name: { vi: 'Máy in Laser/Màu, Máy đa năng & Máy scan tài liệu tốc độ cao', en: 'Laser/Color Printers, MFPs & High-Speed Document Scanners' },
         desc: {
           vi: 'Thiết bị in ấn và số hóa tài liệu chuyên dụng cho văn phòng, cơ quan, hỗ trợ in mạng, đảo mặt tự động và quét tài liệu số lượng lớn.',
@@ -769,7 +769,7 @@ let currentLang = 'vi';
     function renderProducts() {
       const cats = [
         { id: 'all', label: currentLang === 'vi' ? 'Tất cả' : 'All' },
-        { id: 'office_it', label: currentLang === 'vi' ? 'Máy tính, Laptop, Máy in & Scan' : 'PCs, Laptops, Printers & Scan' },
+        { id: 'office_it', label: currentLang === 'vi' ? 'Máy tính, Thiết bị văn phòng' : 'PCs, Laptops, Office equipments' },
         { id: 'licensing', label: currentLang === 'vi' ? 'Bản quyền phần mềm' : 'Software Licensing' },
         { id: 'components', label: currentLang === 'vi' ? 'Linh kiện máy tính' : 'Computer Components' },
         { id: 'network', label: currentLang === 'vi' ? 'Hạ tầng mạng & Bảo mật' : 'Network & Security' },
